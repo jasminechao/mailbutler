@@ -1,2 +1,10 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<% @features.each do |feature| %>
+<h1><%= feature.header %></h1>
+<h2><%= feature.subhead %></h2>
+<%= link_to "Read more", feature_path(feature), class: "btn-medium" %>
+<% end %>
+
+

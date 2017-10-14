@@ -1,7 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "Deleting old features..."
+
+Feature.destroy_all
+
+puts "Creating new features..."
+
+features_attributes = [
+  {
+    header: "Email Tracking",
+    subhead: "Tracking Emails Made Easy",
+    description: "If you are wondering what happens to your outgoing emails after you hit send, then you’ve come to the right place. Meet Mailbutler - the email extension, which allows you to track emails in Apple Mail and Gmail.",
+    video_link: "https://www.youtube.com/ watch?v=BriJb4YNyqo",
+    cloundinary_img_url: "https://www.mailbutler.io/images/icon_512x512@2x.png"
+  },
+]
+
+Feature.create!(features_attributes)
+
+puts "Finished creating new features!"
