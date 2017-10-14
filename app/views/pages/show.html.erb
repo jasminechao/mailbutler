@@ -2,12 +2,15 @@
 
 
 
-<div class="features container">
-  <div class="summary">
+<div class="feature_overview container">
+  <div class="summary text-center">
     <h1><%= @feature.header %></h1>
     <h2><%= @feature.subhead %></h2>
+    <p><%= @feature.description %></p>
+    <div class='btn btn-success'> <a href='#' id="CTA-Apple">CTA: Free Download For Apple Mail</a></div>
+    <div class='btn btn-primary'> <a href='#' id="CTA-Gmail">CTA: Free Download For GMail</a></div>
   </div>
-  <%= cl_image_tag("irzfra81trjx557msaqq",
+  <%= cl_image_tag(@feature.cloundinary_img_id,
       width: 400, height: 300, crop: :fill) %>
 
 </div>
