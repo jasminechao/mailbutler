@@ -1,13 +1,14 @@
 class PagesController < ApplicationController
-  before_action :set_feature, only: [:show]
+  before_action :set_feature, only: [:feature]
 
   def home
     @features = Feature.all
     # @features = Feature.all.select(&:is_ready?)
   end
 
-  def show
+  def feature
     @feature = Feature.find(params[:id])
+    @features = Feature.all
   end
 
   private

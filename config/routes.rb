@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/:id', to: 'pages#show', as: 'feature'
+  get 'pages/:id', to: 'pages#feature', as: 'feature'
 
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
