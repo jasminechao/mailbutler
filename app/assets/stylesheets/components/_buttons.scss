@@ -1,4 +1,4 @@
-.btn-medium {
+.btn-login {
   color: $blue !important;
   border: 3px solid $blue;
   padding: 7px 20px;
@@ -7,9 +7,27 @@
   opacity: 0.6;
   font-weight: 900;
 }
-.btn-medium:hover {
+.btn-login:hover {
   opacity: 1;
   text-decoration: none;
   color: white;
   background-color:$blue;
+}
+
+.btn-cta {
+  display: inline-flex;
+  color: $blue !important;
+  border: 3px solid $blue;
+  padding: 7px 20px;
+  border-radius: 10px;
+  font-weight: lighter;
+  text-align: left;
+  opacity: 0.6;
+  font-weight: 900;
+  p {
+    margin: 0;
+  }
+  img {
+    height: 50px;
+  }
 }

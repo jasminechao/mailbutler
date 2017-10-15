@@ -5,8 +5,16 @@
     <h1><strong><%= @feature.header %></strong></h1>
     <h3><%= @feature.subhead %></h3>
     <p><%= @feature.description %></p>
-    <div class='btn btn-success'> <a href='#' id="CTA-Apple">CTA: Free Download For Apple Mail</a></div>
-    <div class='btn btn-primary'> <a href='#' id="CTA-Gmail">CTA: Free Download For GMail</a></div>
+    <div class="row">
+      <div class="btn-cta">
+        <p>Free Download <br>For Apple Mail</p>
+        <img src="<%= image_path('apple_icon.png') %>" alt="Apple">
+      </div>
+      <div class="btn-cta">
+        <p>Free Download <br>For Gmail</p>
+        <img src="<%= image_path('gmail_icon.png') %>" alt="GMail">
+      </div>
+    </div>
   </div>
   <%= cl_image_tag(@feature.cloundinary_img_id, width: 400, height: 300, crop: :fit) %>
 </div>
