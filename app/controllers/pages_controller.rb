@@ -17,18 +17,12 @@ class PagesController < ApplicationController
 
   private
 
-
   def set_feature
     @feature = Feature.find(params[:id])
-    # current_feature = @feature
   end
 
   def feature_params
     params.require(:feature).permit(:header, :subhead, :description, :video_link, :cloundinary_img_url)
   end
-
-  # def offer_params
-  #   params.require(:offer).permit(:title, :description)
-  # end
 
 end

@@ -1,3 +1,5 @@
+<%= render 'shared/navbar' %>
+
 <div class="overview container">
   <div class="summary text-center">
     <h1><strong><%= @feature.header %></strong></h1>
@@ -32,7 +34,7 @@
       </div>
     </div>
     <div class="offers-summary col-lg-6">
-      <h3 class="text-center">MailButler offers</h3>
+      <h3 class="text-center">Mailbutler offers</h3>
       <ul>
         <% @feature.offers.each do |offer| %>
         <li><p><strong><%= offer.title %>:</strong> <%= offer.description %></p></li>

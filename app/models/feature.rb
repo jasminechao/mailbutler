@@ -4,11 +4,10 @@ class Feature < ApplicationRecord
 
   validates :header, presence: true
 
-  # def is_ready?
-  #   ready = [:header, :subhead, :description, :video_link, :cloundinary_img_url].all? do |attribute|
-  #     send(attribute).present?
-  #   end
-  #   return ready
-  # end
-  #what checking offers?
+  def is_ready?
+    ready = [:header, :subhead, :description, :video_link, :cloundinary_img_url].all? do |attribute|
+      send(attribute).present?
+    end
+    return ready
+  end
 end
