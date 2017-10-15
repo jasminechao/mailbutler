@@ -12,12 +12,36 @@
   </div>
   <%= cl_image_tag(@feature.cloundinary_img_id, width: 400, height: 300, crop: :fit) %>
 </div>
+
 <div class="links container">
   <div class="row">
-    <div class="card">
+    <div class="card-container">
       <% @features.each do |feature| %>
-      <%= cl_image_tag(feature.cloundinary_img_id, width: 100, height: 100, crop: :fill) %>
+      <div class="card text-center">
+        <%= cl_image_tag(feature.cloundinary_img_id, width: 100, height: 100, crop: :fill) %>
+        <%= feature.header %>
+      </div>
       <% end %>
     </div>
   </div>
 </div>
+
+<div class="offers container">
+  <div class="row">
+    <div class="video-preview">
+      <div class="col-lg-6">
+        <iframe width="560" height="315" src="<%= @feature.video_link %>" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="offers-summary">
+      <div class="col-lg-6">
+        <% @feature.offers.each do |offer| %>
+        <p><strong><%= offer.title %></strong>: <%= offer.description %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/testimonials' %>
+

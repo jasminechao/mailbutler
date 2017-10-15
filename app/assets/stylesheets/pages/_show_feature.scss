@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 5%;
   .summary {
     width: 65%;
     margin-right: 2%;
@@ -9,9 +10,17 @@
 }
 
 .links {
-  .card {
+  .card-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offers {
+
 }
