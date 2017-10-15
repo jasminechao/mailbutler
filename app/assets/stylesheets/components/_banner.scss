@@ -1,7 +1,7 @@
 .banner {
   color: white;
   text-align: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -11,6 +11,7 @@
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin: 5% auto 5% auto;
 }
 .banner p {
   font-size: 25px;
