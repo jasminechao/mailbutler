@@ -20,9 +20,14 @@
     display: flex;
     flex-direction: column;
     opacity: 0.2;
+    text-decoration: none;
+    color: $text-gray;
   }
   .card:hover {
     opacity: 1.0 !important;
+  }
+  a:hover {
+      text-decoration: none;
   }
 }
 
