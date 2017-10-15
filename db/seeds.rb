@@ -2,6 +2,7 @@ puts "Deleting old stuff..."
 
 Feature.destroy_all
 Testimonial.destroy_all
+Faq.destroy_all
 
 puts "Creating new features..."
 
@@ -73,4 +74,33 @@ testimonials_attributes = [
 Testimonial.create!(testimonials_attributes)
 
 puts "Finished creating new testimonials!"
+
+puts "Creating FAQs"
+
+faqs_attributes = [
+  {
+    question: "How do I know if someone read my email?",
+    answer: "You know it from the read receipt confirmations of your email tracking software. Mailbutler shows a double checkmark in your Sent folder in
+case the recipient has opened the email, and a single checkmark in case the email hasn’t been opened yet."
+  },
+  {
+    question: "Can the recipient see the difference between tracked and not tracked emails?",
+    answer: "No. The recipient can’t see if the email is being tracked or not: Mailbutler only adds an invisible 1-pixel image to your outgoing message."
+  },
+  {
+    question: "How does Mailbutler track emails?",
+    answer: "When you activate email tracking for a specific email, Mailbutler includes a hidden 1-pixel image into this outgoing message. Once the
+recipient opens the email, his or her mail client loads this hidden image. Mailbutler collects information about the date and the time, when the
+email has been viewed, the location, where it has happened, and further details, and passes this data on to you."
+  },
+  {
+    question: "Is the content of my tracked emails secured from third parties?",
+    answer: "Yes, your privacy is preserved and protected. All tracked emails are sent from your own email server in Apple Mail or Gmail. Mailbutler doesn’t
+route your emails through any external servers like some email tracking software might do. With Mailbutler your data is always secure."
+  }
+]
+
+Faq.create!(faqs_attributes)
+
+puts "Finished writing FAQs!"
 

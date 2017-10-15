@@ -12,6 +12,7 @@ class PagesController < ApplicationController
     @offer = Offer.new
     @offer.feature = @feature
     @testimonials = Testimonial.all
+    @faqs = Faq.all
   end
 
   private
