@@ -3,9 +3,22 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 5% auto 5% auto;
+  img {
+      margin: 5% auto 5% auto;
+      max-height: 300px;
+    }
   .summary {
     width: 65%;
     margin-right: 2%;
+    h1 {
+      margin: 5% auto 5% auto;
+    }
+    h3 {
+      margin: 5% auto 5% auto;
+    }
+    p {
+      margin: 5% auto 5% auto;
+    }
   }
 }
 

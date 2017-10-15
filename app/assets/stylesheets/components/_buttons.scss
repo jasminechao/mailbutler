@@ -10,15 +10,16 @@
 .btn-login:hover {
   opacity: 1;
   text-decoration: none;
-  color: white;
+  color: white !important;
   background-color:$blue;
+  transition: all .2s;
 }
 
 .btn-cta {
   display: inline-flex;
-  color: $blue !important;
-  border: 3px solid $blue;
-  padding: 7px 20px;
+  // border: 3px solid $orange;
+  background-color:$orange;
+  padding: 15px 30px;
   border-radius: 10px;
   font-weight: lighter;
   text-align: left;
@@ -29,5 +30,12 @@
   }
   img {
     height: 50px;
+    padding: 0 0 0 15px;
   }
+}
+
+.btn-cta:hover {
+  opacity: 1;
+  text-decoration: none;
+  transition: all .2s;
 }
