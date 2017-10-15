@@ -33,15 +33,17 @@
         <iframe width="560" height="315" src="<%= @feature.video_link %>" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="offers-summary">
-      <div class="col-lg-6">
+    <div class="offers-summary col-lg-6">
+      <h3 class="text-center">MailButler offers</h3>
+      <ul>
         <% @feature.offers.each do |offer| %>
-        <p><strong><%= offer.title %></strong>: <%= offer.description %></p>
-        <% end %>
-      </div>
+        <li><p><strong><%= offer.title %>:</strong> <%= offer.description %></p></li>
+      <% end %>
+      </ul>
     </div>
   </div>
 </div>
 
 <%= render 'shared/testimonials' %>
 
+<%= render 'shared/mailchimp_signup' %>

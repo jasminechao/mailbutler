@@ -1,6 +1,7 @@
-puts "Deleting old features..."
+puts "Deleting old stuff..."
 
 Feature.destroy_all
+Testimonial.destroy_all
 
 puts "Creating new features..."
 
@@ -51,8 +52,21 @@ testimonials_attributes = [
     name: "David Balensiefen",
     position: "CEO",
     company: "gridX GmbH",
-    cloundinary_img_id: "face_top",
+    cloundinary_img_id: "Balensiefen_Profile",
     quote: "Now I can’t imagine to not have MailButler’s assistance every day. It makes a huge difference. It’s very helpful, and can be used just by everyone."
+  },
+  {
+    name: "Paul Dziwoki",
+    position: "Co-Founder & CTO",
+    company: "Jommi",
+    cloundinary_img_id: "Dziwoki_Profile",
+    quote: "MailButler contains all the functions that the plugins used to have plus the new ones. Amazing tool for those, who want to handle their emails easier and more efficient: you’ll be surprised, how much time you save!"
+  },
+  {
+    name: "Jennifer Huber",
+    position: "Business Consultant",
+    cloundinary_img_id: "Huber_Profile",
+    quote: "Due to my job it’s essential to me to use a proper Apple Mail assistant that helps me do my work. In MailButler I found everything I needed: it is reliable, completes all the necessary tasks, and is easy to install and to use."
   },
 ]
 
