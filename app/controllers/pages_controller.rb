@@ -2,8 +2,7 @@ class PagesController < ApplicationController
   before_action :set_feature, only: [:feature]
 
   def home
-    @features = Feature.all
-    # @features = Feature.all.select(&:is_ready?)
+    @feature = Feature.find_by_header("Email Tracking")
   end
 
   def feature

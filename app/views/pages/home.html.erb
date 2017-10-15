@@ -1,10 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://picsum.photos/1900/1100/?random');">
+  <div class="banner-content">
+    <h1>Check out Jasmine's Coding Challenge</h1>
+    <%= link_to "GO", feature_path(@feature), class: "btn-lg btn-blue" %>
+  </div>
+</div>
 
-<% @features.each do |feature| %>
-<h1><%= feature.header %></h1>
-<h2><%= feature.subhead %></h2>
-<%= link_to "Read more", feature_path(feature), class: "btn-medium" %>
-<% end %>
-
-
+<%= render 'shared/footer' %>
