@@ -26,8 +26,7 @@
   margin: 5% auto 5% auto;
   .card-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    align: center;
   }
   .card {
     display: flex;
@@ -35,6 +34,7 @@
     opacity: 0.2;
     text-decoration: none;
     color: $text-gray;
+    align-items: center;
   }
   .card:hover {
     opacity: 1.0 !important;
